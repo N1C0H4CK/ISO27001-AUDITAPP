@@ -15,7 +15,7 @@ controls = {
     "Application Management Solutions": [
         {"number": "A.6.1.4", "description": "Separation of Environments", "owner": "Alice Brown", "lastReview": "2024-11-20", "signOff": "Pending", "evidence": ""},
     ],
-    "6Global Technology": [
+    "Global Technology": [
         {"number": "A.6.1.4", "description": "Separation of Environments", "owner": "Alice Brown", "lastReview": "2024-11-20", "signOff": "Pending", "evidence": ""},
     ],
     "Service Readiness": [
