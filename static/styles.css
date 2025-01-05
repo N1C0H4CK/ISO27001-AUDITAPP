@@ -1,0 +1,65 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header styling */
+h1 {
+    text-align: center;
+    color: #444;
+    margin-top: 20px;
+}
+
+h3 {
+    color: #555;
+}
+
+/* Button styles */
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Container for controls */
+#controls {
+    margin: 20px auto;
+    padding: 10px;
+    max-width: 600px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Paragraph styling */
+p {
+    margin: 5px 0;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+/* Links */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+

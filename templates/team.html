@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>Team Details</title>
+</head>
+<body>
+    <h1>Team Details</h1>
+    <div id="controls">Loading...</div>
+
+    <script>
+        // Extract team name from the URL
+        const params = new URLSearchParams(window.location.search);
+        const team = params.get('team');
+
+        // Fetch controls from the backend
+        fetch(`/api/getControls?team=${team}`)
+            .then(response => response.json())
+            .then(data => {
+                const controlsDiv = document.getElementById('controls');
+                controlsDiv.innerHTML = '';
+                data.forEach(control => {
+                    controlsDiv.innerHTML += `
+                        <h3>${control.number}: ${control.description}</h3>
+                        <p>Owner: ${control.owner}</p>
+                        <p>Last Review: ${control.lastReview}</p>
+                        <p>Sign Off: ${control.signOff}</p>
+                    `;
+                });
+            })
+            .catch(err => {
+                document.getElementById('controls').innerText = 'Error loading data.';
+            });
+    </script>
+</body>
+</html>
