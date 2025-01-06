@@ -10,12 +10,21 @@ body {
 /* Header styling */
 h1 {
     text-align: center;
-    color: #444;
+    color: #ffffff; /* White text */
     margin-top: 20px;
+    background-color: #006400; /* Dark Green */
+    padding: 20px;
+    border-radius: 8px;
+    text-transform: uppercase; /* Optional: make header text uppercase */
 }
-
-h3 {
-    color: #555;
+p {
+    text-align: center;
+    color: #050101; /* White text */
+    margin-top: 20px;
+    background-color: #b8b8b8; /* Dark Green */
+    padding: 20px;
+    border-radius: 8px;
+    text-transform: uppercase; /* Optional: make header text uppercase */
 }
 
 /* Button styles */
@@ -24,26 +33,38 @@ button {
     padding: 10px 20px;
     margin: 20px 10px;
     font-size: 16px;
-    color: #fff;
-    background-color: #007BFF;
-    border: none;
+    color: #fff; /* White text */
+    background-color: #228B22; /* Forest Green */
+    border: n#000000;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #006400; /* Dark Green */
 }
 
 /* Container for controls */
 #controls {
     margin: 20px auto;
-    padding: 10px;
+    padding: 20px;
     max-width: 600px;
-    background: #fff;
+    background: #ffffff;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center the buttons */
+}
+
+/* Team buttons container */
+#team-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 4 buttons per row */
+    gap: 20px;
+    justify-items: center; /* Center each button in its grid cell */
+    align-items: center; /* Vertically center the items */
+    max-width: 100%; /* Ensure the grid doesn't exceed the container width */
+    grid-auto-rows: minmax(50px, auto); /* Ensure buttons are evenly spaced */
 }
 
 /* Paragraph styling */
@@ -51,11 +72,12 @@ p {
     margin: 5px 0;
     line-height: 1.5;
     font-size: 14px;
+    color: #333;
 }
 
 /* Links */
 a {
-    color: #007BFF;
+    color: #228B22; /* Forest Green */
     text-decoration: none;
 }
 
@@ -63,3 +85,11 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Add a dark green background */
+body {
+    background-color: #677e67; /* Dark Green */
+}
+
+#controls {
+    background-color: #ffffff; /* White background for the controls */
+}
